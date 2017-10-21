@@ -4,6 +4,7 @@
   "description": "functional javascript starter",
   "main": "index.js",
   "scripts": {
+    "app": "node --experimental-modules main.mjs",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
