@@ -1,0 +1,26 @@
+{
+  "name": "fp-starter",
+  "version": "0.0.1",
+  "description": "functional javascript starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolcookie/node-fp-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolcookie/node-fp-starter/issues"
+  },
+  "homepage": "https://github.com/lolcookie/node-fp-starter#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-plugin-better": "^0.1.5",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-ramda": "^1.0.2"
+  }
+}
