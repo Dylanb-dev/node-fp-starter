@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": "cleanjs",
+  "plugins": ["ramda"],
+  "rules": {
+    "ramda/prefer-reject": 2,
+    "strict": 2,
+    "semi": [2, "never"],
+    "quotes": [2, "single", "avoid-escape"],
+    "comma-dangle": ["error", "never"],
+    "import/prefer-default-export": "off",
+    "no-bitwise": "off"
+  }
+}
