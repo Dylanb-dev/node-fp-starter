@@ -4,8 +4,10 @@
   "description": "functional javascript starter",
   "main": "index.js",
   "scripts": {
-    "app": "node --experimental-modules main.mjs",
-    "start": "node index.js",
+    "app": "SANCTUARY_CHECK_TYPES=true node --experimental-modules main.mjs",
+    "sig":
+      "cp test.mjs post.mjs && ./node_modules/jscodeshift/bin/jscodeshift.sh post.mjs",
+    "start": "SANCTUARY_CHECK_TYPES=false node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +26,9 @@
     "eslint-plugin-better": "^0.1.5",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-ramda": "^1.0.2"
+    "eslint-plugin-ramda": "^1.0.2",
+    "jscodeshift": "^0.3.32",
+    "tape": "^4.8.0"
   },
   "dependencies": {
     "@std/esm": "^0.12.1",
@@ -36,6 +40,7 @@
     "fluture": "^7.1.3",
     "immutable": "^3.8.2",
     "immutable-ext": "^1.1.2",
+    "rambda": "^0.9.8",
     "sanctuary": "^0.13.2",
     "sanctuary-def": "^0.13.1"
   }
